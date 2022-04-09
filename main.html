@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,19 +16,19 @@
         </div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Recipes</li>
-                <li>Article</li>
-                <li>Purache</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Purache</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="main_div">
             <div id="text_div">
-                <span id="main_text1"> Vehicle </span>
-                <span id="main_text2"> One of Saturn’s largest rings <br> may be newer than anyone </span>
-                <span id="main_text3">June 6, 2019    By Rickie Baroch     4 comments </span>
+                <span id="main_text1" class="main_text"> Vehicle </span>
+                <span id="main_text2" class="main_text"> One of Saturn’s largest rings <br> may be newer than anyone </span>
+                <span id="main_text3" class="main_text"> June 6, 2019    By Rickie Baroch     4 comments </span>
             </div>
         </div>
         <div id="post">
@@ -38,7 +41,9 @@
                     <img src="img/Group 7.png">
                     <img src="img/Group 8.png">
                 </div>
-                <div id="block2" class="block"></div>
+                <div id="block2" class="block">
+                    <img src="img/Post2.png" alt="">
+                </div>
                 <div id="block3" class="block">
                     <img src="img/Group 10.png">
                     <img src="img/Group 11.png">
@@ -47,15 +52,37 @@
                 </div>
             </div>
             <div id="sidebar">
-                <img src="img/Bitmap Copy 6.png" alt="">
-                <img src="img/side1.png" alt="">
-                <img src="img/Bitmap Copy 8.png" alt="">
-                <img src="img/side2.png" alt="">
-                <img src="img/side3.png" alt="">
-                <img src="img/side4.png" alt="">
-                <img src="img/Categories.png" alt="">
-                <img src="img/Social media.png" alt="">
-                <img src="img/tags.png" alt="">
+                <div class="side_header"> <a href="">About the author</a></div>
+                <img src="img/side1.png" class="side">
+                <div class="side_header"> <a href="">Featured Posts</a></div>
+                <img src="img/side2.png"  class="side">
+                <img src="img/side3.png"  class="side">
+                <img src="img/side4.png"  class="side">
+                <div class="side_header"> <a href="">Categories</a> </div>
+                    <div id="categories">
+                        <a href="" class="category">Fashion</a>
+                        <img src="img/Line.png" alt="" class="line">
+                        <a href="" class="category">Style & Clothes</a>
+                        <img src="img/Line.png" alt="" class="line">
+                        <a href="" class="category">Minimalism</a>
+                        <img src="img/Line.png" alt="" class="line">
+                        <a href="" class="category">Black & White</a>
+                        <img src="img/Line.png" alt="" class="line">
+                        <a href="" class="category">Modern Clothes</a>
+                    </div>
+                <div class="side_header"> <a href="">Social Media</a></div>
+                <div id="media">
+                    <div class="logo">  <a href=""><img src="img/logos/logo (1).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (2).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (3).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (4).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (5).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (6).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (7).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (8).svg" alt=""></a></div>
+                    <div class="logo">  <a href=""><img src="img/logos/logo (9).svg" alt=""></a></div>
+                </div>
+                <div class="side_header"> <a href="">Tags</a></div>
                 
             </div>
         </div>
