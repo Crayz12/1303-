@@ -108,13 +108,7 @@ main{
     color: #666666;
     text-align: center;
 }
-#block1 span{
-    color: black;
-    font-family: PT Serif;
-    font-size: 16px;
-    text-align: center;
-}
-#block1 div{
+.post_div{
     display: flex;
     width: 370px;
     flex-direction: column;
@@ -122,30 +116,18 @@ main{
     margin-bottom: 30px;
     box-shadow: 0px 2px 6px 0px #0000004d;
 }
-#block1 a{
+.post_div a{
     text-decoration: none;
     text-align: center;
 }
-#block3 span{
+.post_div span{
     color: black;
     font-family: PT Serif;
     font-size: 16px;
-    text-align: center;
-}
-#block3 div{
-    display: flex;
-    width: 370px;
-    flex-direction: column;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 6px 0px #0000004d;
-}
-#block3 a{
-    text-decoration: none;
     text-align: center;
 }
 .block{
-    width: 100%;
+    max-width: 770px;
     box-sizing: content-box;
     margin-bottom: 40px;
     background-size: contain;
@@ -184,13 +166,11 @@ main{
 }
 #block1{
     display: flex;
-    max-width: 770px;
     height: 1350px;
     flex-wrap: wrap;
     flex-direction: column;
 }
 #block2{
-    max-width: 770px;
     height: 561px;
     box-shadow: 0px 2px 5px 0px #0000003b;
 }
@@ -234,7 +214,7 @@ main{
     margin-right: 0;
 }
 .side_header{
-    border: red solid 1px;
+    border: rgba(115, 123, 0, 0.579) solid 1px;
     width: 270px;
     height: 50px;
     box-sizing: border-box;
@@ -277,7 +257,7 @@ main{
     line-height: 21px;
     letter-spacing: 0px;
     text-align: center;
-    color: #171717;
+    color: #262118;
 }
 @media (max-width: 900px) {
 #logo{
