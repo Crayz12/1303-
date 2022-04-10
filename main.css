@@ -45,6 +45,11 @@ main{
     display: flex;
     flex-direction: column;
 }
+#text_div a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
 #main_div{
     margin-bottom: 60px;
     box-sizing: border-box;
@@ -66,7 +71,6 @@ main{
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 #main_text2{
@@ -75,9 +79,6 @@ main{
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    /* or 125% */
-
-
     color: #FFFFFF;
 }
 #main_text3{
@@ -86,9 +87,6 @@ main{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    /* identical to box height */
-
-
     color: #FFFFFF;
 }
 #block{
@@ -96,7 +94,6 @@ main{
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-    
 }
 .tag{
     font-family: PT Sans;
@@ -123,6 +120,29 @@ main{
     flex-direction: column;
     margin-right: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 2px 6px 0px #0000004d;
+}
+#block1 a{
+    text-decoration: none;
+    text-align: center;
+}
+#block3 span{
+    color: black;
+    font-family: PT Serif;
+    font-size: 16px;
+    text-align: center;
+}
+#block3 div{
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 6px 0px #0000004d;
+}
+#block3 a{
+    text-decoration: none;
+    text-align: center;
 }
 .block{
     width: 100%;
@@ -131,23 +151,54 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
 }
+#block2 a{
+    text-decoration: none;  
+}
+#block2 p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    color: #666666;
+}
+#block2 p.tag{
+    color: #C9A96E;
+}
+#block2 p.date{
+    margin-top: 40px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    justify-content: flex-end;
+}
+#block2 span{
+    color: black;
+    font-family: PT Serif;
+    font-size: 20px;
+    text-align: center;
+}
 #post{
     width: calc(100vw * 0.55);
     display: flex;
     width: auto;
 }
+.block div:hover{
+    background: rgba(173, 216, 230, 0.7);
+}
 #block1{
     display: flex;
-    width: 770px;
+    max-width: 770px;
     height: 1350px;
     flex-wrap: wrap;
     flex-direction: column;
 }
 #block2{
+    max-width: 770px;
     height: 561px;
+    box-shadow: 0px 2px 5px 0px #0000003b;
 }
 #block3{
-    height: 852px;
+    display: flex;
+    height: 900px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 #sidebar{
    /*background-image: url('img/sidebar.png');*/
@@ -189,6 +240,9 @@ main{
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+.side_header a:hover{
+    background: rgba(184, 232, 179, 0.7);
 }
 .side_header:nth-child(1){
     margin-top: 0;
