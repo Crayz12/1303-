@@ -19,8 +19,8 @@ nav{
     font-family: 'PT Serif';
     font-style: normal;
     font-size: 18px;
-    display: flex;
     justify-content: space-around;
+    display: flex;
 }
 ul{
     padding-left: 0;
@@ -187,13 +187,16 @@ main{
     width: 270px;
     display: flex;
     flex-direction: column;
-    height: 2566px;
+    height: 2665px;
 }
 .side{
     margin-top: 20px;
 }
 #media{
     overflow: hidden;  
+}
+.post_div a:hover{
+    background: rgba(173, 216, 230, 0.7);
 }
 .logo{
     display: flex;
@@ -213,16 +216,11 @@ main{
 .logo:nth-child(3n){
     margin-right: 0;
 }
-.side_header{
-    border: rgba(115, 123, 0, 0.579) solid 1px;
-    width: 270px;
+header{
     height: 50px;
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-top: 20px;
-}
-.side_header a:hover{
-    background: rgba(184, 232, 179, 0.7);
 }
 .side_header:nth-child(1){
     margin-top: 0;
@@ -259,21 +257,84 @@ main{
     text-align: center;
     color: #262118;
 }
+#side_tag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#side_tag a{
+    padding: 20px;
+    background: #F8F9FA;
+    text-decoration: none;
+    font-family: PT Serif;
+    font-size: 18px;
+    color: #666666;
+}
+#page_nav{
+    height: 50px;
+    display: flex;
+    margin-left: 130px;
+    margin-right: 130px;
+    width: 510px;
+    justify-content: space-around;
+}
+#bottom_block{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: auto;
+}
+#bottom_block span{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 22px;   
+    color: #171717;
+}
+#bottom_block span a{
+    text-decoration: none;
+    color: #171717;
+}
+#bottom_image{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 20px;
+}
+#bottom_image img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}   
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;   
+    flex-direction: column;
+    align-items: center;
+}
+#footer_nav nav{
+    display: flex;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 15px;
+    color: #666666;
+}
 @media (max-width: 900px) {
-#logo{
-    margin: 0;
+    #logo{
+        margin: 0;
     }
-nav{
-    width: 30%;
-    font-size: 20px;
+    nav{
+        width: 30%;
+        font-size: 20px;   
     }
     #main_div{
-        padding-left: 100px;}
+        padding-left: 100px;
+    }
 }
-@media (max-width: 700px) {
-nav{
-    width: 30%;
-    font-size: 20px;
+    @media (max-width: 700px) {
+    nav{
+        width: 30%;
+        font-size: 20px;
     }
 }
 @media (max-width: 550px){
