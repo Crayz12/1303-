@@ -94,13 +94,13 @@ main{
     color: #FFFFFF;
 }
 #block{
-    width: 65%;
+    width: 66%;
     display: flex;
     flex-direction: column;
 }
 .tag{
     font-family: PT Sans;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     color: #C9A96E;
     text-transform: uppercase;
@@ -115,14 +115,13 @@ main{
     display: flex;
     width: 48%;
     flex-direction: column;
-    margin-right: 30px;
     margin-bottom: 30px;
     box-shadow: 0px 2px 6px 0px #0000004d;
 }
 .post_div img{
     width: 100%;
     display: block;
-    height: calc(100vw * 0.16);
+    height: calc(100vw * 0.14);
 }
 .post_div a{
     text-decoration: none;
@@ -131,7 +130,7 @@ main{
 .post_div span{
     color: black;
     font-family: PT Serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -166,6 +165,9 @@ main{
     font-size: 20px;
     text-align: center;
 }
+#block2 img{
+    width: 100%;
+}
 #post{
     display: flex;
     justify-content: space-between;
@@ -178,9 +180,8 @@ main{
 }
 #block1{
     display: flex;
-    height: 1350px;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between;
 }
 #block2{
     height: 561px;
@@ -195,17 +196,31 @@ main{
 #sidebar{
    /*background-image: url('img/sidebar.png');*/
     background-repeat: no-repeat;
-    width: 30%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     height: 2665px;
 }
 #sidebar .post_div{
     width: 100%;
-    margin: 0;
 }
-#sidebard .post_div img{
-    height: calc(100vw * 0.1);
+.side{ 
+    height: 55% !important;
+}
+#sidebar p{
+    margin-top: calc(100vw * 0.7 / 100);
+    margin-bottom: calc(100vw * 0.2 / 100);
+}
+#sidebar .tag{
+    margin-top: calc(100vw * 0.7 / 100);
+    margin-bottom: calc(100vw * 0.2 / 100);
+}
+#sidebar span{
+    padding-bottom: calc(100vw * 0.5 / 100);
+    font-size: 16px;
+}
+#sidebar .date{
+    margin-top: calc(100vw * 0.5 / 100);
 }
 #media{
     overflow: hidden;  
@@ -366,8 +381,13 @@ footer{
         width: 100%;
     }
 }
-@media (max-width: 770px) {
-
+@media (max-width: 1350px) {
+    #sidebar span{
+        font-size: 14px;
+    }
+    .post_div span{
+        font-size: 14px;
+    }
 }
 @media (max-width: 550px){
 }
